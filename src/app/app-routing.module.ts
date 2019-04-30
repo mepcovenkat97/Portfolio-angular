@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'projects', component:ProjectsComponent},
   {path:'skills', component:SkillsComponent},
   {path: '', redirectTo: '/aboutme', pathMatch: 'full' },
-  {path:'index', redirectTo:'/aboutme', pathMatch:'full'},//This loads the default component
+  {path:'Portfolio-angular/Portfolio-angular/', redirectTo:'/aboutme', pathMatch:'full'},//This loads the default component
 ];
 
 @NgModule({
