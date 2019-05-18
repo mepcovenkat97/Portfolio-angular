@@ -1,6 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
- * {
+* {
   box-sizing: border-box;
   
 }
@@ -113,6 +111,8 @@ body {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+
+  
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
@@ -123,31 +123,38 @@ body {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
+  left: 1px;
   }
   
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
   left: 60px;
-  border: medium solid white;
+  border: medium solid lightblue;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent lightblue transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-  left: 15px;
+  left: 19px;
   }
+
+  
   
   /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
   }
+  .left {
+    right: 25%;
+  }
 }
 
 
 .progresscontainer {
-   width: 200px; /* Full width */
+   width: 100%; /* Full width */
    background-color: rgb(194, 185, 185); /* Grey background */
+   align-content: center;
  }
  
  .skills {
@@ -157,15 +164,15 @@ body {
    color: white; /* White text color */
  }
  
- .html {width: 71%; background-color: #2196F3;} /* Green */
- .css {width: 65%; background-color: #2196F3;} /* Blue */
- .c {width: 60%; background-color: #2196F3;} /* Red */
- .cpp {width: 70%; background-color: #2196F3;} /* Dark Grey */
- .python {width: 65%; background-color:#2196F3;} /* Green */
- .django {width: 60%; background-color: #2196F3;} /* Blue */
- .perl {width: 60%; background-color: #2196F3;} /* Red */
- .java {width: 65%; background-color: #2196F3;} /* Dark Grey */
- .mysql {width: 75%; background-color: #2196F3;} /* Green */
+ .html {width: 81%; background-color: #2196F3;} /* Green */
+ .css {width: 75%; background-color: #2196F3;} /* Blue */
+ .c {width: 80%; background-color: #2196F3;} /* Red */
+ .cpp {width: 90%; background-color: #2196F3;} /* Dark Grey */
+ .python {width: 85%; background-color:#2196F3;} /* Green */
+ .django {width: 70%; background-color: #2196F3;} /* Blue */
+ .perl {width: 80%; background-color: #2196F3;} /* Red */
+ .java {width: 90%; background-color: #2196F3;} /* Dark Grey */
+ .mysql {width: 85%; background-color: #2196F3;} /* Green */
  .mssql {width: 70%; background-color: #2196F3;} /* Blue */
  .ubuntu {width: 80%; background-color: #2196F3;} /* Red */
  .fedora {width: 70%; background-color: #2196F3;} /* Dark Grey */
@@ -276,3 +283,4 @@ body {
 	-webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-direction: alternate;
 }
+
